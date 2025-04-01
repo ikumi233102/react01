@@ -6,8 +6,7 @@ export const App = () => { // Appコンポーネントをエクスポート
   return ( // JSXを返す
     <>
       {/* Cardコンポーネントを使用し、タイトルとコンテンツを日本語で渡す */}
-      <Card title="こんにちは" content="ヤッホー">
-      </Card>
+      <Card title="こんにちは" content="ヤッホー" />
       {/* Cardコンポーネントを使用し、タイトルとコンテンツをイタリア語で渡す */}
       <Card title="Ciao" content="Ehi">
       </Card>
