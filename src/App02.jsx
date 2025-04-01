@@ -1,0 +1,16 @@
+import React from 'react';
+
+export const App = () => {
+  // 複数行記述するときは( )で囲む
+  return (
+    <>
+      <h1>こんにちは</h1>
+      <p>ヤッホー</p>
+      <ul>
+        <li>リンゴ</li>
+        <li>バナナ</li>
+        <li>オレンジ</li>         
+      </ul>
+    </>
+  );
+};
