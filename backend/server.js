@@ -196,6 +196,7 @@ app.post('/api/rgb', (req, res) => {
   });
 });
 
-app.listen(port, () => {
-  console.log(`サーバー起動中：http://localhost:${port}`);
+app.listen(5000, '0.0.0.0', () => {
+  console.log('Server started on port 5000');
 });
+
