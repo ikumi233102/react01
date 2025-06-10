@@ -133,12 +133,34 @@ export const App = () => {
       </div>
 
       <div>
-        <label>R: </label>
-        <input type="number" value={r} onChange={e => setR(e.target.value)} />
+        <label> R: </label>
+        <input
+          type="number"
+          value={r}
+          onChange={e => setR(e.target.value)}
+          style={{ width: '50px' }}
+          min="0"
+          max="255"
+        />
         <label> G: </label>
-        <input type="number" value={g} onChange={e => setG(e.target.value)} />
+        <input
+          type="number"
+          value={g}
+          onChange={e => setG(e.target.value)}
+          style={{ width: '50px' }}
+          min="0"
+          max="255"
+        />
         <label> B: </label>
-        <input type="number" value={b} onChange={e => setB(e.target.value)} />
+        <input
+          type="number"
+          value={b}
+          onChange={e => setB(e.target.value)}
+          style={{ width: '50px' }}
+          min="0"
+          max="255"
+        />
+
         <button onClick={handleRgbSubmit} style={{ marginLeft: 5 }}>RGB送信</button>
       </div>
 
