@@ -5,6 +5,12 @@ const port = 5000;
 
 app.use(cors());
 app.use(express.json());
+// リクエストログ用ミドルウェア
+app.use((req, res, next) => {
+  console.log(`[${new Date().toISOString()}] ${req.method} ${req.url}`);
+  next(); // 次の処理へ
+});
+
 
 // HEX→RGB変換
 function hexToRgb(hex) {
